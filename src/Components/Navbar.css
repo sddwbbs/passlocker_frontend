@@ -1,0 +1,61 @@
+nav {
+    background-color: #1F1F1F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+  }
+
+  .brand-left {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    margin-left: -10px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .brand-right {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    margin-left: -20px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .login-text {
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  

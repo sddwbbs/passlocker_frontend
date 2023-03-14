@@ -1,0 +1,71 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.img-Logo {
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.header {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  margin-top: 120px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+.text-email {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 600px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.rectangle-email {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: -20px;
+  margin-left: 600px;
+  border: 2px solid black;
+}
+
+.text-password {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 600px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.rectangle-password {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  margin-left: 600px;
+  border: 2px solid black;
+}
+
+.rectangle-continue {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 600px;
+  border: 2px solid #AEAEAE;
+}
+
+.rectangle-text-continue {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
