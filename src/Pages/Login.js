@@ -17,6 +17,9 @@ function Login() {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(!re.test(String(e.target.value).toLowerCase())) {
             setEmailError('некорректный email')
+            if(!e.target.value) {
+                setEmailError('email не может быть пустым')
+            }
         } else {
             setEmailError("")
         }
@@ -50,29 +53,35 @@ function Login() {
         <div className="no-scroll">
             <img className="img-Logo"
             src={bigLogo}
-            height="130"
-            width="350"
+            height="120"
+            width="330"
             alt="Logo"
             />  
             <form>
                 <h1>Вход</h1>
                 <h2>Введите email:</h2>
-                {(emailDirty && emailError) && <div style={{color:'red', marginLeft: '600px'}}>{emailError}</div>}
-                <input onChange={e => emailHandler(e)}
-                 value={email}
-                 onBlur={e => blurHandler(e)}
-                 name='email' 
-                 type="text" 
-                 placeholder='email адрес'/>
+                <div className="centered">
+                {(emailDirty && emailError) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{emailError}</div>}
+                    <input onChange={e => emailHandler(e)}
+                    value={email}
+                    onBlur={e => blurHandler(e)}
+                    name='email' 
+                    type="text" 
+                    placeholder='email адрес'/>
+                 </div>
                 <h2>Введите пароль:</h2>
-                {(passwordError && passwordDirty) && <div style={{color:'red', marginLeft: '600px'}}>{passwordError}</div>}
-                <input onChange={e => passwordHandler(e)} 
-                 value={password} 
-                 onBlur={e => blurHandler(e)} 
-                 name='password' 
-                 type="password" 
-                 placeholder='пароль'/>
-                <button type='submit'>Войти</button>
+                <div className="centered">
+                {(passwordError && passwordDirty) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{passwordError}</div>}
+                    <input onChange={e => passwordHandler(e)} 
+                    value={password} 
+                    onBlur={e => blurHandler(e)} 
+                    name='password' 
+                    type="password" 
+                    placeholder='пароль'/>
+                 </div>
+                 <div className="centered">
+                    <button type='submit'>Войти</button>
+                 </div>
             </form>
         </div>
     );
