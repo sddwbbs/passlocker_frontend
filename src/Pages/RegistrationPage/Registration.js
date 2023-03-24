@@ -1,7 +1,7 @@
 import './Registration.css';
-import bigLogo from '../Assets/bigLogo.png'
-import miniLogo from '../Assets/miniLogo.png'
-import RegPageHuman from '../Assets/RegPageHuman.png'
+import bigLogo from '../../Assets/bigLogo.png'
+import miniLogo from '../../Assets/miniLogo.png'
+import RegPageHuman from '../../Assets/RegPageHuman.png'
 
 function Registration() {
     return (

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import bigLogo from '../Assets/bigLogo.png';
+import bigLogo from '../../Assets/bigLogo.png';
 import './Login.css';
-
+import { Link } from "react-router-dom";
 
 function Login() {
 
@@ -58,21 +58,23 @@ function Login() {
             alt="Logo"
             />  
             <form>
-                <h1>Вход</h1>
-                <h2>Введите email:</h2>
+                <h1 className="Header1">Вход</h1>
+                <h2 className="Header2">Введите email:</h2>
                 <div className="centered">
-                {(emailDirty && emailError) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{emailError}</div>}
-                    <input onChange={e => emailHandler(e)}
+                {/* {(emailDirty && emailError) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{emailError}</div>} */}
+                    <input className="input"
+                    onChange={e => emailHandler(e)}
                     value={email}
                     onBlur={e => blurHandler(e)}
                     name='email' 
-                    type="text" 
+                    type="email" 
                     placeholder='email адрес'/>
                  </div>
-                <h2>Введите пароль:</h2>
+                <h2 className="Header2">Введите пароль:</h2>
                 <div className="centered">
-                {(passwordError && passwordDirty) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{passwordError}</div>}
-                    <input onChange={e => passwordHandler(e)} 
+                {/* {(passwordError && passwordDirty) && <div style={{color:'red', marginLeft: '-200px', marginBottom: '5px'}}>{passwordError}</div>} */}
+                    <input className="input" 
+                    onChange={e => passwordHandler(e)} 
                     value={password} 
                     onBlur={e => blurHandler(e)} 
                     name='password' 
@@ -80,7 +82,7 @@ function Login() {
                     placeholder='пароль'/>
                  </div>
                  <div className="centered">
-                    <button type='submit'>Войти</button>
+                    <button className="button" type='submit'>Войти</button>
                  </div>
             </form>
         </div>

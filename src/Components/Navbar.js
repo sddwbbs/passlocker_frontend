@@ -1,5 +1,6 @@
 import './Navbar.css';
 import logo from './keyLogo.png';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -23,7 +24,13 @@ function Navbar() {
       </div>
       <div className="navbar-right">
         <ul className="Login">
-          <li><a className="login-text" href="#">Войти</a></li>
+          <li>     
+              <Link to="/login" key={"4"}>
+                <button>
+                    Войти
+                </button>
+              </Link>
+          </li>
         </ul>
       </div>
     </nav>
