@@ -13,11 +13,13 @@ function Navbar(props) {
                 crossOrigin=""
             ></link>
             <div className="navbar-left">
-                {/*FIXME: надо как-то убрать подчеркивания снизу у названия*/}
                 <Link to={props.mainLabelHref}>
                     <img src={logo} height="45" width="45" alt="Logo" />
                 </Link>
-                <Link to={props.mainLabelHref}>
+                <Link
+                    to={props.mainLabelHref}
+                    style={{ textDecoration: 'none' }}
+                >
                     <ul className="brand">
                         <li>
                             <div className="brand-left"> pass</div>
