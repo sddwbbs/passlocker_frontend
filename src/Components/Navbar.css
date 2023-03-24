@@ -1,61 +1,60 @@
 nav {
-    background-color: #1F1F1F;
+    background-color: #1f1f1f;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-  }
-  
-  ul {
+}
+
+ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  li {
+}
+
+li {
     margin-left: 20px;
-  }
-  
-  .navbar-left {
+}
+
+.navbar-left {
     display: flex;
     align-items: center;
     margin-left: 200px;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     align-items: center;
-  }
+}
 
-  .navbar-right {
+.navbar-right {
     display: flex;
     align-items: center;
     margin-right: 200px;
-  }
+}
 
-  .brand-left {
+.brand-left {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
     margin-left: -10px;
     font-size: 35px;
     color: white;
     text-decoration: none;
-  }
+}
 
-  .brand-right {
+.brand-right {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
     margin-left: -20px;
     font-size: 35px;
     color: white;
     text-decoration: none;
-  }
+}
 
-  .login-text {
+.login-text {
     font-family: 'Lexend', sans-serif;
     font-size: 20px;
     color: white;
     text-decoration: none;
-  }
-  
+}

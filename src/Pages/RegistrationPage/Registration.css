@@ -1,104 +1,104 @@
 .no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .black-background {
-  background-color: #1F1F1F;
-  flex: 1;
+    background-color: #1f1f1f;
+    flex: 1;
 }
 
 .blackside-text-header {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-top: 120px;
-  margin-left: 100px;
-  font-size: 50px;
-  color: white;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
 }
 
 .blackside-text-email {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  margin-top: 120px;
-  margin-left: 100px;
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .rectangle-email {
-  display: flex;
-  align-items: center;
-  margin-top: -15px;
-  margin-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 100px;
 }
 
 .rectangle-password {
-  display: flex;
-  align-items: center;
-  margin-top: -15px;
-  margin-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 100px;
 }
 
 .rectangle-text-email {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  margin-left: -300px;
-  font-size: 25px;
-  color: #D9D9D9;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-left: -300px;
+    font-size: 25px;
+    color: #d9d9d9;
+    text-decoration: none;
 }
 
 .rectangle-text-password {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  margin-left: -350px;
-  font-size: 25px;
-  color: #D9D9D9;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-left: -350px;
+    font-size: 25px;
+    color: #d9d9d9;
+    text-decoration: none;
 }
 
 .blackside-text-password {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  margin-left: 100px;
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .rectangle-continue {
-  display: flex;
-  align-items: center;
-  margin-top: 35px;
-  margin-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 100px;
 }
 
 .rectangle-text-continue {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-left: 10px;
-  font-size: 25px;
-  color: black;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
 }
 
 .img-miniLogo {
-  margin-left: -10px;
+    margin-left: -10px;
 }
 
 .white-background {
-  background-color: white;
-  flex: 1;
+    background-color: white;
+    flex: 1;
 }
 
 .img-Logo {
-  margin-top: 90px;
-  margin-left: 150px;
+    margin-top: 90px;
+    margin-left: 150px;
 }
 
 .img-Human {
-  margin-top: 290px;
-  margin-left: 100px;
+    margin-top: 290px;
+    margin-left: 100px;
 }

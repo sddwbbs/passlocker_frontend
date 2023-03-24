@@ -1,53 +1,53 @@
 .no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .img-Logo {
-  margin-left: 50px;
-  margin-top: 0px;
+    margin-left: 50px;
+    margin-top: 0px;
 }
 
 .Header1 {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-top: 150px;
-  text-align: center;
-  font-size: 45px;
-  color: black;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    text-decoration: none;
 }
 
 .Header2 {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  margin-left: 650px;
-  font-size: 25px;
-  color: black;
-  text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-left: 650px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
 }
 
 .input {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 15px;
-  width: 25%;
-  box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 25%;
+    box-sizing: border-box;
 }
 
 .centered {
-  text-align: center;
+    text-align: center;
 }
 
 .button {
-  border: 1px solid #AEAEAE;
-  border-radius: 10px;
-  height: 75px;
-  width: 430px;
-  margin-top: 30px;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: black;
-  background-color: #AEAEAE;
-  text-decoration: none;
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    height: 75px;
+    width: 430px;
+    margin-top: 30px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    background-color: #aeaeae;
+    text-decoration: none;
 }
