@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import bigLogo from '../../Assets/bigLogo.png'
 import './Login.css'
-import { Link } from 'react-router-dom'
+import Navbar from '../../Components/Navbar'
 
 function Login() {
     const [email, setEmail] = useState('')
@@ -52,13 +51,7 @@ function Login() {
 
     return (
         <div className="no-scroll">
-            <img
-                className="img-Logo"
-                src={bigLogo}
-                height="120"
-                width="330"
-                alt="Logo"
-            />
+            <Navbar mainLabelHref={'/'} />
             <form>
                 <h1 className="Header1">Вход</h1>
                 <h2 className="Header2">Введите email:</h2>
