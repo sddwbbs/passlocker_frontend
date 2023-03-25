@@ -11,7 +11,9 @@ function Home() {
                         <button className="login_button">Войти</button>
                     </Link>,
                     <Link to="/register" key={'5'}>
-                        <button className="registration_button">Зарегистрироваться</button>
+                        <button className="registration_button">
+                            Зарегистрироваться
+                        </button>
                     </Link>,
                 ]}
             />
