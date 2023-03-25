@@ -3,7 +3,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 6px;
 }
 
 ul {
@@ -38,7 +38,7 @@ li {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
     margin-left: -10px;
-    font-size: 35px;
+    font-size: 28px;
     color: white;
     text-decoration: none;
 }
@@ -47,14 +47,7 @@ li {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
     margin-left: -20px;
-    font-size: 35px;
-    color: white;
-    text-decoration: none;
-}
-
-.login-text {
-    font-family: 'Lexend', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     text-decoration: none;
 }

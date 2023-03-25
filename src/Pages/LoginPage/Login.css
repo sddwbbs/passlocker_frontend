@@ -2,17 +2,12 @@
     overflow: hidden;
 }
 
-.img-Logo {
-    margin-left: 50px;
-    margin-top: 0px;
-}
-
 .Header1 {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
     margin-top: 150px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     color: black;
     text-decoration: none;
 }
@@ -20,8 +15,9 @@
 .Header2 {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
-    margin-left: 650px;
-    font-size: 25px;
+    text-align: center;
+    margin-left: -200px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -41,9 +37,9 @@
 .button {
     border: 1px solid #aeaeae;
     border-radius: 10px;
-    height: 75px;
-    width: 430px;
-    margin-top: 30px;
+    height: 60px;
+    width: 25%;
+    margin-top: 20px;
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
     font-size: 20px;
