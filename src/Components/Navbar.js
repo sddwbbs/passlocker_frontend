@@ -14,7 +14,7 @@ function Navbar(props) {
             ></link>
             <div className="navbar-left">
                 <Link to={props.mainLabelHref}>
-                    <img src={logo} height="45" width="45" alt="Logo" />
+                    <img src={logo} height="40" width="40" alt="Logo" />
                 </Link>
                 <Link
                     to={props.mainLabelHref}

@@ -1,3 +1,4 @@
+import './Home.css'
 import Navbar from '../../Components/Navbar'
 import { Link } from 'react-router-dom'
 
@@ -7,10 +8,10 @@ function Home() {
             <Navbar
                 buttons={[
                     <Link to="/login" key={'4'}>
-                        <button>Войти</button>
+                        <button className="login_button">Войти</button>
                     </Link>,
                     <Link to="/register" key={'5'}>
-                        <button>Зарегистрироваться</button>
+                        <button className="registration_button">Зарегистрироваться</button>
                     </Link>,
                 ]}
             />
