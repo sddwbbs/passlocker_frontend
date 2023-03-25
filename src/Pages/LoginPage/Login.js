@@ -113,11 +113,11 @@ function Login() {
         <div className="no-scroll">
             <Navbar mainLabelHref={'/'} />
             <form onSubmit={handleSubmit}>
-                <h1 className="Header1">Вход</h1>
-                <h2 className="Header2">Введите email:</h2>
-                <div className="centered">
+                <h1 className="Header1_log_page">Вход</h1>
+                <h2 className="Header2_log_page">Введите email:</h2>
+                <div className="centered_log_page">
                     <input
-                        className="input"
+                        className="input_email_log_page"
                         // onChange={(e) => emailHandler(e)}
                         value={email}
                         // onBlur={(e) => blurHandler(e)}
@@ -127,10 +127,10 @@ function Login() {
                         onChange={(event) => setEmail(event.target.value)}
                     />
                 </div>
-                <h2 className="Header2">Введите пароль:</h2>
-                <div className="centered">
+                <h2 className="Header2_log_page">Введите пароль:</h2>
+                <div className="centered_log_page">
                     <input
-                        className="input"
+                        className="input_password_log_page"
                         // onChange={(e) => passwordHandler(e)}
                         value={password}
                         // onBlur={(e) => blurHandler(e)}
@@ -140,8 +140,8 @@ function Login() {
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
-                <div className="centered">
-                    <button className="button" type="submit" onClick={signIn}>
+                <div className="centered_log_page">
+                    <button className="button_log_page" type="submit" onClick={signIn}>
                         Войти
                     </button>
                 </div>
