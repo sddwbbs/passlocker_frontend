@@ -5,100 +5,103 @@
 .black-background {
     background-color: #1f1f1f;
     flex: 1;
+    max-width: 100%;
+    height: auto; 
 }
 
-.blackside-text-header {
+.Header1_reg_page {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
-    margin-top: 120px;
-    margin-left: 100px;
-    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 }
 
-.blackside-text-email {
+.Header2_email {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
-    margin-top: 120px;
-    margin-left: 100px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
+    position: absolute; 
+    top: 24%;
+    left: 10%;
 }
 
-.rectangle-email {
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-    margin-left: 100px;
-}
-
-.rectangle-password {
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-    margin-left: 100px;
-}
-
-.rectangle-text-email {
+.Header2_password {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
-    margin-left: -300px;
-    font-size: 25px;
-    color: #d9d9d9;
-    text-decoration: none;
-}
-
-.rectangle-text-password {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 400;
-    margin-left: -350px;
-    font-size: 25px;
-    color: #d9d9d9;
-    text-decoration: none;
-}
-
-.blackside-text-password {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 400;
-    margin-left: 100px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
+    position: fixed; 
+    top: 37%;
+    left: 10%;
 }
 
-.rectangle-continue {
-    display: flex;
-    align-items: center;
-    margin-top: 35px;
-    margin-left: 100px;
+.input_email_reg_page {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    white-space: nowrap;
 }
 
-.rectangle-text-continue {
+.input_password_reg_page {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    white-space: nowrap;
+}
+
+.button_reg_page {
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    height: 60px;
+    width: 60%;
+    margin-top: -20px;
     font-family: 'Lexend', sans-serif;
-    font-weight: 600;
-    margin-left: 10px;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 20px;
     color: black;
+    background-color: #aeaeae;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.img-miniLogo {
-    margin-left: -10px;
+.centered_reg_page {
+    text-align: center;
 }
 
 .white-background {
     background-color: white;
     flex: 1;
-}
+    max-width: 100%;
+    height: auto; 
+  }
 
 .img-Logo {
-    margin-top: 90px;
-    margin-left: 150px;
+    max-width: 30%;
+    height: auto;
+    position: absolute; 
+    top: 0;
+    right: 20%;
 }
 
 .img-Human {
-    margin-top: 290px;
-    margin-left: 100px;
-}
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 15%;  
+  }
+
