@@ -147,7 +147,11 @@ function Login() {
                     />
                 </div>
                 <div className="centered_log_page">
-                    <button className="button_log_page" type="submit" onClick={signIn}>
+                    <button
+                        className="button_log_page"
+                        type="submit"
+                        onClick={signIn}
+                    >
                         Войти
                     </button>
                 </div>

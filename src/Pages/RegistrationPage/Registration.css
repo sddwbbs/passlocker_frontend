@@ -6,7 +6,7 @@
     background-color: #1f1f1f;
     flex: 1;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .Header1_reg_page {
@@ -27,7 +27,7 @@
     font-size: 20px;
     color: white;
     text-decoration: none;
-    position: absolute; 
+    position: absolute;
     top: 24%;
     left: 10%;
 }
@@ -38,7 +38,7 @@
     font-size: 20px;
     color: white;
     text-decoration: none;
-    position: fixed; 
+    position: fixed;
     top: 37%;
     left: 10%;
 }
@@ -86,13 +86,13 @@
     background-color: white;
     flex: 1;
     max-width: 100%;
-    height: auto; 
-  }
+    height: auto;
+}
 
 .img-Logo {
     max-width: 30%;
     height: auto;
-    position: absolute; 
+    position: absolute;
     top: 0;
     right: 20%;
 }
@@ -102,6 +102,5 @@
     height: auto;
     position: absolute;
     bottom: 0;
-    right: 15%;  
-  }
-
+    right: 15%;
+}

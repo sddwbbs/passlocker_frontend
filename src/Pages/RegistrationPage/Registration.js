@@ -4,18 +4,63 @@ import './Registration.css'
 import bigLogo from '../../Assets/bigLogo.png'
 // import miniLogo from '../../Assets/miniLogo.png'
 import RegPageHuman from '../../Assets/RegPageHuman.png'
+import axios from 'axios'
 
 function Registration() {
     const navigate = useNavigate()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [showMessage, setShowMessage] = useState(false)
+    const [errorCode, setErrorCode] = useState(undefined)
+    const [handleMessage, setHandleMessage] = useState(undefined)
 
     useEffect(() => {
         if (localStorage.getItem('access_token') !== null) {
             navigate('/dashboard')
         }
     })
+
+    const signUp = () => {
+        let url
+
+        if (process.env.REACT_APP_ENV === 'local') {
+            url = 'http://localhost:8080/api/register'
+        } else if (process.env.REACT_APP_ENV === 'prod') {
+            url = '/api/register'
+        }
+
+        axios({
+            method: 'post',
+            url: url,
+            data: {
+                email: email,
+                password: password,
+            },
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((response) => {
+                if (response.data.error_code === 0) {
+                    setErrorCode(response.data.error_code)
+                    setHandleMessage(response.data.message)
+                    setShowMessage(true)
+
+                    setEmail('')
+                    setPassword('')
+                }
+            })
+            .catch((error) => {
+                if (error.response !== undefined) {
+                    setErrorCode(error.response.data.error_code)
+                    setHandleMessage(error.response.data.message)
+                    setShowMessage(true)
+                } else {
+                    console.log('backend is disable')
+                }
+            })
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -63,8 +108,18 @@ function Registration() {
                                 }
                             />
                         </div>
+                        {/*FIXME: сделать нормальный стиль сообщения*/}
+                        {showMessage ? (
+                            <p style={{ color: errorCode ? 'red' : 'green' }}>
+                                {handleMessage}
+                            </p>
+                        ) : null}
                         <div className="centered_reg_page">
-                            <button className="button_reg_page" type="submit">
+                            <button
+                                className="button_reg_page"
+                                type="submit"
+                                onClick={signUp}
+                            >
                                 Войти
                             </button>
                         </div>
