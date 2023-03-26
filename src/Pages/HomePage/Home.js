@@ -1,8 +1,17 @@
 import './Home.css'
 import Navbar from '../../Components/Navbar'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function Home() {
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (localStorage.getItem('access_token') !== null) {
+            navigate('/dashboard')
+        }
+    })
+
     return (
         <div>
             <Navbar

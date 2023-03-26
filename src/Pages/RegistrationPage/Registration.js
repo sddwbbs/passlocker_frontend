@@ -1,18 +1,25 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import './Registration.css'
 import bigLogo from '../../Assets/bigLogo.png'
 // import miniLogo from '../../Assets/miniLogo.png'
 import RegPageHuman from '../../Assets/RegPageHuman.png'
 
 function Registration() {
+    const navigate = useNavigate()
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    useEffect(() => {
+        if (localStorage.getItem('access_token') !== null) {
+            navigate('/dashboard')
+        }
+    })
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-    };
+        event.preventDefault()
+    }
 
     return (
         <div className="no-scroll">
@@ -36,7 +43,9 @@ function Registration() {
                                 name="email"
                                 type="email"
                                 placeholder="email адрес"
-                                onChange={(event) => setEmail(event.target.value)}
+                                onChange={(event) =>
+                                    setEmail(event.target.value)
+                                }
                             />
                         </div>
                         <h2 className="Header2_password">Введите пароль:</h2>
@@ -49,7 +58,9 @@ function Registration() {
                                 name="password"
                                 type="password"
                                 placeholder="пароль"
-                                onChange={(event) => setPassword(event.target.value)}
+                                onChange={(event) =>
+                                    setPassword(event.target.value)
+                                }
                             />
                         </div>
                         <div className="centered_reg_page">
@@ -60,12 +71,13 @@ function Registration() {
                     </form>
                 </div>
                 <div className="white-background">
-                    <Link to='/'>
-                        <img className="img-Logo" 
-                        src={bigLogo} 
-                        height="100" 
-                        width="280" 
-                        alt="Logo" 
+                    <Link to="/">
+                        <img
+                            className="img-Logo"
+                            src={bigLogo}
+                            height="100"
+                            width="280"
+                            alt="Logo"
                         />
                     </Link>
 

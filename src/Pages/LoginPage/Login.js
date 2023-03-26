@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Navbar from '../../Components/Navbar'
 import './Login.css'
 
 function Login() {
-    let navigate = useNavigate()
+    const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     // const [email, setEmail] = useState('')
@@ -43,6 +43,12 @@ function Login() {
     //         setPasswordError('')
     //     }
     // }
+
+    useEffect(() => {
+        if (localStorage.getItem('access_token') !== null) {
+            navigate('/dashboard')
+        }
+    })
 
     //FIXME: не хранить refresh_token в localStorage. Куки не дает поставить CORS,
     const signIn = () => {
@@ -89,7 +95,7 @@ function Login() {
                 if (error.response !== undefined) {
                     console.error(error.response.data.message)
                 } else {
-                    console.error(error)
+                    console.error('backend is disable')
                 }
             })
     }
