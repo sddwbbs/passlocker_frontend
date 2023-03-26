@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import './Login.css'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 import Navbar from '../../Components/Navbar'
+import './Login.css'
 
 function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    let navigate = useNavigate()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
     // const [email, setEmail] = useState('')
     // const [password, setPassword] = useState('')
     // const [emailDirty, setEmailDirty] = useState(false)
@@ -12,6 +15,7 @@ function Login() {
     // const [emailError, setEmailError] = useState('email не может быть пустым')
     // const [passwordError, setPasswordError] = useState(
     //     'пароль не может быть пустым'
+
     // )
 
     // const emailHandler = (e) => {
@@ -40,9 +44,59 @@ function Login() {
     //     }
     // }
 
+    //FIXME: не хранить refresh_token в localStorage. Куки не дает поставить CORS,
+    const signIn = () => {
+        let url
+
+        if (process.env.REACT_APP_ENV === 'local') {
+            url = 'http://localhost:8080/api/auth/login'
+        } else if (process.env.REACT_APP_ENV === 'prod') {
+            url = '/api/auth/login'
+        }
+
+        axios({
+            method: 'post',
+            url: url,
+            data: {
+                email: email,
+                password: password,
+            },
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((response) => {
+                if (
+                    response.error_code === 0 ||
+                    response.error_code === undefined
+                ) {
+                    localStorage.setItem(
+                        'access_token',
+                        response.data.access_token
+                    )
+
+                    localStorage.setItem(
+                        'refresh_token',
+                        response.data.refresh_token
+                    )
+
+                    navigate('/dashboard')
+                } else {
+                    console.error(response.message)
+                }
+            })
+            .catch((error) => {
+                if (error.response !== undefined) {
+                    console.error(error.response.data.message)
+                } else {
+                    console.error(error)
+                }
+            })
+    }
+
     const handleSubmit = (event) => {
-        event.preventDefault();
-      };
+        event.preventDefault()
+    }
 
     // const blurHandler = (e) => {
     //     switch (e.target.name) {
@@ -87,7 +141,7 @@ function Login() {
                     />
                 </div>
                 <div className="centered_log_page">
-                    <button className="button_log_page" type="submit">
+                    <button className="button_log_page" type="submit" onClick={signIn}>
                         Войти
                     </button>
                 </div>
