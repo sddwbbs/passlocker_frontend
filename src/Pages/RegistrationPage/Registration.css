@@ -104,3 +104,38 @@
     bottom: 0;
     right: 15%;
 }
+
+.message {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: -100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message.show {
+    display: block;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        right: -100px;
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        right: 20px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -19,7 +19,18 @@ function Registration() {
         if (localStorage.getItem('access_token') !== null) {
             navigate('/dashboard')
         }
-    })
+        let timeoutId
+        if (showMessage) {
+            // Задержка на 3 секунды перед скрытием сообщения
+            timeoutId = setTimeout(() => {
+                setShowMessage(false)
+            }, 2000)
+        }
+
+        return () => {
+            clearTimeout(timeoutId)
+        }
+    }, [showMessage])
 
     const signUp = () => {
         let url
@@ -108,11 +119,22 @@ function Registration() {
                                 }
                             />
                         </div>
-                        {/*FIXME: сделать нормальный стиль сообщения*/}
                         {showMessage ? (
-                            <p style={{ color: errorCode ? 'red' : 'green' }}>
-                                {handleMessage}
-                            </p>
+                            <div
+                                className={`message ${
+                                    showMessage ? 'show' : ''
+                                }`}
+                            >
+                                <p
+                                    style={{
+                                        fontSize: '20px',
+                                        color: errorCode ? 'red' : 'green',
+                                        fontFamily: 'Arial'
+                                    }}
+                                >
+                                    {handleMessage}
+                                </p>
+                            </div>
                         ) : null}
                         <div className="centered_reg_page">
                             <button
