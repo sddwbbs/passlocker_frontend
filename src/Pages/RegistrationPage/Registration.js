@@ -1,10 +1,10 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import './Registration.css'
 import bigLogo from '../../Assets/bigLogo.png'
-// import miniLogo from '../../Assets/miniLogo.png'
 import RegPageHuman from '../../Assets/RegPageHuman.png'
-import axios from 'axios'
+import MessagePopup from '../../Components/MessagePopup/MessagePopup'
+import './Registration.css'
 
 function Registration() {
     const navigate = useNavigate()
@@ -19,18 +19,7 @@ function Registration() {
         if (localStorage.getItem('access_token') !== null) {
             navigate('/dashboard')
         }
-        let timeoutId
-        if (showMessage) {
-            // Задержка на 3 секунды перед скрытием сообщения
-            timeoutId = setTimeout(() => {
-                setShowMessage(false)
-            }, 2000)
-        }
-
-        return () => {
-            clearTimeout(timeoutId)
-        }
-    }, [showMessage])
+    }, [navigate])
 
     const signUp = () => {
         let url
@@ -120,21 +109,12 @@ function Registration() {
                             />
                         </div>
                         {showMessage ? (
-                            <div
-                                className={`message ${
-                                    showMessage ? 'show' : ''
-                                }`}
-                            >
-                                <p
-                                    style={{
-                                        fontSize: '20px',
-                                        color: errorCode ? 'red' : 'green',
-                                        fontFamily: 'Arial'
-                                    }}
-                                >
-                                    {handleMessage}
-                                </p>
-                            </div>
+                            <MessagePopup
+                                showMessage={showMessage}
+                                setShowMessage={setShowMessage}
+                                errorCode={errorCode}
+                                message={handleMessage}
+                            />
                         ) : null}
                         <div className="centered_reg_page">
                             <button

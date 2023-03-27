@@ -1,13 +1,19 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/Navbar/Navbar'
 import './Login.css'
+import MessagePopup from '../../Components/MessagePopup/MessagePopup'
 
 function Login() {
     const navigate = useNavigate()
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [showMessage, setShowMessage] = useState(false)
+    const [errorCode, setErrorCode] = useState(undefined)
+    const [handleMessage, setHandleMessage] = useState(undefined)
+
     // const [email, setEmail] = useState('')
     // const [password, setPassword] = useState('')
     // const [emailDirty, setEmailDirty] = useState(false)
@@ -76,6 +82,13 @@ function Login() {
                     response.error_code === 0 ||
                     response.error_code === undefined
                 ) {
+                    setErrorCode(response.data.error_code)
+                    setHandleMessage(response.data.message)
+                    setShowMessage(true)
+
+                    setEmail('')
+                    setPassword('')
+
                     localStorage.setItem(
                         'access_token',
                         response.data.access_token
@@ -93,7 +106,9 @@ function Login() {
             })
             .catch((error) => {
                 if (error.response !== undefined) {
-                    console.error(error.response.data.message)
+                    setErrorCode(error.response.data.error_code)
+                    setHandleMessage(error.response.data.message)
+                    setShowMessage(true)
                 } else {
                     console.error('backend is disable')
                 }
@@ -146,6 +161,14 @@ function Login() {
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
+                {showMessage ? (
+                    <MessagePopup
+                        showMessage={showMessage}
+                        setShowMessage={setShowMessage}
+                        errorCode={errorCode}
+                        message={handleMessage}
+                    />
+                ) : null}
                 <div className="centered_log_page">
                     <button
                         className="button_log_page"
