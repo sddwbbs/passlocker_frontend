@@ -2,7 +2,7 @@ import './Dashboard.css'
 import { Avatar, Grid, Card, Text } from '@nextui-org/react';
 import avatarLogo from '../../Assets/avatarLogo.png'
 import plusIcon from '../../Assets/plusIcon.png'
-import Modal from '../../Components/Modal.js'
+import Modal from '../../Components/Modal/Modal.js'
 import { useState } from 'react';
 
 function Dashboard() {
