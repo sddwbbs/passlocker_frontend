@@ -5,13 +5,6 @@ import { Link } from 'react-router-dom'
 function Navbar(props) {
     return (
         <nav>
-            {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap"
-                rel="stylesheet"
-                crossOrigin=""
-            ></link> */}
             <div className="navbar-left">
                 <Link to={props.mainLabelHref}>
                     <img src={logo} height="40" width="40" alt="Logo" />
