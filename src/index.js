@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './Pages/HomePage/Home'
 import RegistrationPage from './Pages/RegistrationPage/Registration'
 import LoginPage from './Pages/LoginPage/Login'
-import VaultPage from './Pages/VaultPage/Vault'
+import DashboardPage from './Pages/DashboardPage/Dashboard'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -14,7 +14,7 @@ root.render(
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegistrationPage />} />
-            <Route path="/vault" element={<VaultPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
     </BrowserRouter>
 )
