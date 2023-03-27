@@ -57,7 +57,7 @@ function Registration() {
                     setHandleMessage(error.response.data.message)
                     setShowMessage(true)
                 } else {
-                    console.log('backend is disable')
+                    console.error('backend is disable')
                 }
             })
     }
