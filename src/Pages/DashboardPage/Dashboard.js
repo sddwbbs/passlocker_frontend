@@ -1,6 +1,6 @@
-import './Dashboard.css';
+import './Dashboard.css'
 import { useState } from 'react';
-import { Avatar, Grid } from '@nextui-org/react';
+import { Avatar, Grid, Card, Text } from '@nextui-org/react';
 import avatarLogo from '../../Assets/avatarLogo.png';
 import plusIcon from '../../Assets/plusIcon.png';
 import Modal from '../../Components/Modal/Modal.js';
