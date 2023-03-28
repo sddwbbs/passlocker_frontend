@@ -30,7 +30,6 @@
     align-items: center;
     margin-left: 20px;
     margin-top: 25px;
-    position: absolute;
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -39,8 +38,8 @@
     background-color: #1f1f1f;
     border-radius: 10px;
     border: none;
-    height: 5%;
-    width: 9%;
+    height: 40px;
+    width: 130px;
     cursor: pointer;
 }
 
@@ -52,4 +51,5 @@
 .white-background-dashboard {
     margin-left: 20%;
     flex: 1;
+    overflow-x: hidden;
 }
