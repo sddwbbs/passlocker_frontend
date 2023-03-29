@@ -75,7 +75,7 @@ function Dashboard() {
                                 },
                             }}
                         >
-                            <MockItem text={item.ServiceName} key={item.ID} />
+                            <MockItem text={item.Link} key={item.ID} />
                         </Grid>
                     ))}
                 </Grid.Container>
