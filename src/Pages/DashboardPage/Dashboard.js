@@ -30,6 +30,7 @@ function Dashboard() {
                         logOut(navigate)
                     }}
                     style={{
+                        width: '35%',
                         borderRadius: '20px',
                         backgroundColor: 'white',
                         color: 'black',
@@ -60,16 +61,17 @@ function Dashboard() {
                 >
                     {passwords.map((item) => (
                         <Grid
-                            xs={10}
-                            sm={5.5}
-                            md={2.8}
+                            xs={5.8}
+                            sm={3.8} 
+                            md={2.8} 
                             key={item.ID}
                             css={{
                                 '@media screen and (max-width: 600px)': {
-                                    xs: 12,
+                                    xs: 12, 
                                 },
-                                '@media screen and (min-width: 600px) and (max-width: 1100px)':
-                                    { xs: 6 },
+                                '@media screen and (min-width: 600px) and (max-width: 1100px)':{
+                                    xs: 6, 
+                                },
                                 '@media screen and (min-width: 1100px)': {
                                     xs: 2.8,
                                 },
@@ -84,7 +86,61 @@ function Dashboard() {
                 title={'Создать новый элемент'}
                 isOpened={modal.modal1}
                 onModalClose={() => setModal({ ...modal, modal1: false })}
-            ></Modal>
+            >
+                <form>
+                        <h2 className="modal_window_h2" 
+                            style={{
+                                marginTop: '30px'
+                            }}>Имя сервиса</h2>
+                            <input
+                            className="modal_window_input"
+                            name="service_name"
+                            type="text"
+                            placeholder="введите имя"
+                            />
+                        <h2 className="modal_window_h2">Ссылка</h2>
+                            <input
+                            className="modal_window_input"
+                            name="link"
+                            type="link"
+                            placeholder="вставьте ссылку"
+                            />
+                        <h2 className="modal_window_h2">Логин</h2>
+                            <input
+                            className="modal_window_input"
+                            name="login"
+                            type="text"
+                            placeholder="введите логин"
+                            />
+                        <h2 className="modal_window_h2">Email</h2>
+                            <input
+                            className="modal_window_input"
+                            name="email"
+                            type="email"
+                            placeholder="введите email"
+                            />
+                        <h2 className="modal_window_h2">Пароль</h2>
+                            <input
+                            className="modal_window_input"
+                            name="password"
+                            type="text"
+                            placeholder="введите пароль"
+                            />
+                        <button
+                            className="plus_button"
+                            type="submit"
+                            style={{
+                                marginTop: '30px',
+                                justifyContent: 'center',
+                                marginLeft: '20%',
+                                marginBottom: '20px',
+                                width: '60%',
+                            }}
+                        >
+                            Создать
+                        </button>
+                    </form>
+            </Modal>
         </div>
     )
 }

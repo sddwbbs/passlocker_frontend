@@ -23,10 +23,10 @@
     max-width: 500px;
     margin: auto;
     background: white;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 20px;
     border-radius: 10px;
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: scroll;
 }
 
