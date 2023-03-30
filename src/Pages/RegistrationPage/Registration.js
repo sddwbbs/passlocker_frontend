@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Registration.css'
 import bigLogo from '../../Assets/bigLogo.png'
-// import miniLogo from '../../Assets/miniLogo.png'
 import RegPageHuman from '../../Assets/RegPageHuman.png'
 
 function Registration() {
@@ -27,12 +26,10 @@ function Registration() {
                     <form onSubmit={handleSubmit}>
                         <h1 className="Header1_reg_page">Создайте аккаунт</h1>
                         <h2 className="Header2_email">Введите email:</h2>
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <input
                                 className="input_email_reg_page"
-                                // onChange={(e) => emailHandler(e)}
                                 value={email}
-                                // onBlur={(e) => blurHandler(e)}
                                 name="email"
                                 type="email"
                                 placeholder="email адрес"
@@ -40,19 +37,17 @@ function Registration() {
                             />
                         </div>
                         <h2 className="Header2_password">Введите пароль:</h2>
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <input
                                 className="input_password_reg_page"
-                                // onChange={(e) => passwordHandler(e)}
                                 value={password}
-                                // onBlur={(e) => blurHandler(e)}
                                 name="password"
                                 type="password"
                                 placeholder="пароль"
                                 onChange={(event) => setPassword(event.target.value)}
                             />
                         </div>
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <button className="button_reg_page" type="submit">
                                 Войти
                             </button>

@@ -15,31 +15,20 @@
 .Header2_log_page {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
-    text-align: center;
-    margin-left: -200px;
+    margin-left: 0px;
     font-size: 20px;
     color: black;
+    margin-left: 38%;
     text-decoration: none;
 }
 
-.input_email_log_page {
+.input_log_page {
     border: 1px solid black;
     border-radius: 10px;
     padding: 15px;
+    margin-left: 38%;
     width: 25%;
     box-sizing: border-box;
-}
-
-.input_password_log_page {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    width: 25%;
-    box-sizing: border-box;
-}
-
-.centered_log_page {
-    text-align: center;
 }
 
 .button_log_page {
@@ -48,6 +37,7 @@
     height: 60px;
     width: 25%;
     margin-top: 20px;
+    margin-left: 38%;
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
     font-size: 20px;
