@@ -47,7 +47,6 @@ function Login() {
                         placeholder="пароль"
                         onChange={(event) => setPassword(event.target.value)}
                     />
-                </div>
                 {showMessage ? (
                     <MessagePopup
                         showMessage={showMessage}
@@ -72,7 +71,7 @@ function Login() {
                             )
                         }}
                     >
-                        Войти
+Войти
                     </button>
             </form>
         </div>
