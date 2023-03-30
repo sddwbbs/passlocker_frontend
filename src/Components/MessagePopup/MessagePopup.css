@@ -1,0 +1,21 @@
+.message p {
+    margin: 0;
+}
+
+.message.show {
+    display: block;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        right: -100px;
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        right: 20px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

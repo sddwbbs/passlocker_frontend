@@ -1,14 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import Navbar from '../../Components/Navbar/Navbar'
 import './Login.css'
-import Navbar from '../../Components/Navbar'
+import MessagePopup from '../../Components/MessagePopup/MessagePopup'
+import { signIn } from './Requests'
 
 function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const navigate = useNavigate()
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [showMessage, setShowMessage] = useState(false)
+    const [errorCode, setErrorCode] = useState(undefined)
+    const [handleMessage, setHandleMessage] = useState(undefined)
+
+    useEffect(() => {
+        if (localStorage.getItem('access_token') !== null) {
+            navigate('/dashboard')
+        }
+    })
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-      };
+        event.preventDefault()
+    }
 
     return (
         <div className="no-scroll">
@@ -33,7 +47,31 @@ function Login() {
                         placeholder="пароль"
                         onChange={(event) => setPassword(event.target.value)}
                     />
-                    <button className="button_log_page" type="submit">
+                </div>
+                {showMessage ? (
+                    <MessagePopup
+                        showMessage={showMessage}
+                        setShowMessage={setShowMessage}
+                        errorCode={errorCode}
+                        message={handleMessage}
+                    />
+                ) : null}
+                    <button
+                        className="button_log_page"
+                        type="submit"
+                        onClick={() => {
+                            signIn(
+                                email,
+                                password,
+                                setEmail,
+                                setPassword,
+                                setErrorCode,
+                                setHandleMessage,
+                                setShowMessage,
+                                navigate
+                            )
+                        }}
+                    >
                         Войти
                     </button>
             </form>
