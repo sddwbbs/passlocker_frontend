@@ -41,9 +41,7 @@ function Registration() {
                         <div className="centered_reg_page">
                             <input
                                 className="input_email_reg_page"
-                                // onChange={(e) => emailHandler(e)}
                                 value={email}
-                                // onBlur={(e) => blurHandler(e)}
                                 name="email"
                                 type="email"
                                 placeholder="email адрес"
@@ -56,9 +54,7 @@ function Registration() {
                         <div className="centered_reg_page">
                             <input
                                 className="input_password_reg_page"
-                                // onChange={(e) => passwordHandler(e)}
                                 value={password}
-                                // onBlur={(e) => blurHandler(e)}
                                 name="password"
                                 type="password"
                                 placeholder="пароль"

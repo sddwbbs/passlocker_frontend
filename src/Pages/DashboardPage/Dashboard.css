@@ -53,3 +53,22 @@
     flex: 1;
     overflow-x: hidden;
 }
+
+.modal_window_h2 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    margin-left: 20%;
+    text-decoration: none;
+}
+
+.modal_window_input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 60%;
+    box-sizing: border-box;
+    margin-left: 20%;
+    white-space: nowrap;
+}
