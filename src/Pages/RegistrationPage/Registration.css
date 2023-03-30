@@ -9,12 +9,36 @@
     height: auto;
 }
 
+.go_back_button {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.arrow-reg_page {
+    rotate: 90deg;
+    margin-left: 2px;  
+    color: black; 
+}
+
 .Header1_reg_page {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
     margin-top: 100px;
     margin-bottom: 100px;
-    text-align: center;
+    margin-left: 15%;
     font-size: 40px;
     color: white;
     text-decoration: none;
@@ -27,9 +51,7 @@
     font-size: 20px;
     color: white;
     text-decoration: none;
-    position: absolute;
-    top: 24%;
-    left: 10%;
+    margin-left: 15%;
 }
 
 .Header2_password {
@@ -38,9 +60,7 @@
     font-size: 20px;
     color: white;
     text-decoration: none;
-    position: fixed;
-    top: 37%;
-    left: 10%;
+    margin-left: 15%;
 }
 
 .input_email_reg_page {
@@ -48,8 +68,9 @@
     border-radius: 10px;
     padding: 15px;
     width: 60%;
+    margin-left: 15%;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     white-space: nowrap;
 }
 
@@ -58,8 +79,9 @@
     border-radius: 10px;
     padding: 15px;
     width: 60%;
+    margin-left: 15%;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     white-space: nowrap;
 }
 
@@ -68,7 +90,7 @@
     border-radius: 10px;
     height: 60px;
     width: 60%;
-    margin-top: -20px;
+    margin-left: 15%;
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -76,10 +98,6 @@
     background-color: #aeaeae;
     text-decoration: none;
     cursor: pointer;
-}
-
-.centered_reg_page {
-    text-align: center;
 }
 
 .white-background {
@@ -98,7 +116,7 @@
 }
 
 .img-Human {
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -117,4 +135,25 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     border-radius: 15px;
+}
+
+@media only screen and (max-width: 710px) {
+    .img-Logo {
+      width: 20%;
+    }
+    .img-Human {
+      width: 25%;
+    }
+    .Header2_email {
+      font-size: 18px;
+    }
+    .Header2_password {
+      font-size: 18px;
+    }
+  }
+
+@media only screen and (max-width: 850px) {
+    .Header1_reg_page {
+      font-size: 30px;
+    }
 }

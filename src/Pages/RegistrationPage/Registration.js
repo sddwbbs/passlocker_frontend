@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import bigLogo from '../../Assets/bigLogo.png'
+import arrow from '../../Assets/arrow.png'
 import RegPageHuman from '../../Assets/RegPageHuman.png'
 import MessagePopup from '../../Components/MessagePopup/MessagePopup'
 import './Registration.css'
@@ -35,6 +36,17 @@ function Registration() {
                 }}
             >
                 <div className="black-background">
+                    <Link to="/" key={'2'}>
+                        <button className="go_back_button">
+                            <img
+                            className="arrow-reg_page"
+                            src={arrow}
+                            height="20"
+                            width="20"
+                            alt=""
+                            />
+                        </button>
+                    </Link>
                     <form onSubmit={handleSubmit}>
                         <h1 className="Header1_reg_page">Создайте аккаунт</h1>
                         <h2 className="Header2_email">Введите email:</h2>
