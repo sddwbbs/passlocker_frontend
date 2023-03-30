@@ -50,7 +50,7 @@ function Registration() {
                     <form onSubmit={handleSubmit}>
                         <h1 className="Header1_reg_page">Создайте аккаунт</h1>
                         <h2 className="Header2_email">Введите email:</h2>
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <input
                                 className="input_email_reg_page"
                                 value={email}
@@ -63,7 +63,7 @@ function Registration() {
                             />
                         </div>
                         <h2 className="Header2_password">Введите пароль:</h2>
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <input
                                 className="input_password_reg_page"
                                 value={password}
@@ -83,7 +83,7 @@ function Registration() {
                                 message={handleMessage}
                             />
                         ) : null}
-                        <div className="centered_reg_page">
+                        <div className="centered">
                             <button
                                 className="button_reg_page"
                                 type="submit"

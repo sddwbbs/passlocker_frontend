@@ -100,6 +100,10 @@
     cursor: pointer;
 }
 
+.centered {
+    text-align: center;
+}
+
 .white-background {
     background-color: white;
     flex: 1;
