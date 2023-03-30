@@ -45,7 +45,7 @@
     white-space: nowrap;
 }
 
-.Header2_email {
+.Header2_reg_page {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -54,16 +54,7 @@
     margin-left: 15%;
 }
 
-.Header2_password {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    margin-left: 15%;
-}
-
-.input_email_reg_page {
+.input_reg_page {
     border: 1px solid black;
     border-radius: 10px;
     padding: 15px;
@@ -74,23 +65,13 @@
     white-space: nowrap;
 }
 
-.input_password_reg_page {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    width: 60%;
-    margin-left: 15%;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    white-space: nowrap;
-}
-
 .button_reg_page {
     border: 1px solid #aeaeae;
     border-radius: 10px;
     height: 60px;
     width: 60%;
     margin-left: 15%;
+    margin-top: 30px;
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -98,10 +79,6 @@
     background-color: #aeaeae;
     text-decoration: none;
     cursor: pointer;
-}
-
-.centered {
-    text-align: center;
 }
 
 .white-background {
@@ -148,10 +125,7 @@
     .img-Human {
       width: 25%;
     }
-    .Header2_email {
-      font-size: 18px;
-    }
-    .Header2_password {
+    .Header2_reg_page {
       font-size: 18px;
     }
   }

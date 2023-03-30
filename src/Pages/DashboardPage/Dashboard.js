@@ -135,6 +135,7 @@ function Dashboard() {
                                 marginLeft: '20%',
                                 marginBottom: '20px',
                                 width: '60%',
+                                height: '55px',
                             }}
                         >
                             Создать

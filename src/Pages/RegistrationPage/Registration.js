@@ -49,10 +49,9 @@ function Registration() {
                     </Link>
                     <form onSubmit={handleSubmit}>
                         <h1 className="Header1_reg_page">Создайте аккаунт</h1>
-                        <h2 className="Header2_email">Введите email:</h2>
-                        <div className="centered">
+                        <h2 className="Header2_reg_page">Введите email:</h2>
                             <input
-                                className="input_email_reg_page"
+                                className="input_reg_page"
                                 value={email}
                                 name="email"
                                 type="email"
@@ -61,11 +60,9 @@ function Registration() {
                                     setEmail(event.target.value)
                                 }
                             />
-                        </div>
-                        <h2 className="Header2_password">Введите пароль:</h2>
-                        <div className="centered">
+                        <h2 className="Header2_reg_page">Введите пароль:</h2>
                             <input
-                                className="input_password_reg_page"
+                                className="input_reg_page"
                                 value={password}
                                 name="password"
                                 type="password"
@@ -74,7 +71,6 @@ function Registration() {
                                     setPassword(event.target.value)
                                 }
                             />
-                        </div>
                         {showMessage ? (
                             <MessagePopup
                                 showMessage={showMessage}
@@ -83,7 +79,6 @@ function Registration() {
                                 message={handleMessage}
                             />
                         ) : null}
-                        <div className="centered">
                             <button
                                 className="button_reg_page"
                                 type="submit"
@@ -99,9 +94,8 @@ function Registration() {
                                     )
                                 }}
                             >
-                                Войти
+                                Продолжить
                             </button>
-                        </div>
                     </form>
                 </div>
                 <div className="white-background">
