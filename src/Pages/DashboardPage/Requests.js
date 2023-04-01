@@ -148,7 +148,7 @@ export const addPassword = (
                 password: password,
             }
 
-            setPasswords((passwords) => [...passwords, newPassword]``)
+            setPasswords((passwords) => [...passwords, newPassword])
 
             setServiceName('')
             setLink('')
