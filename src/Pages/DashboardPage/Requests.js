@@ -155,10 +155,11 @@ export const addPassword = (
             setLogin('')
             setEmail('')
             setPassword('')
-
+            
+            // Update passwords list with new password
+            getAllPasswords(setPasswords)
             setModal({ ...modal, modal1: false })
         })
-        .then(() => console.log(passwords))
         .catch((error) => {
             if (error.response === undefined) {
                 console.error('backend is disable')
@@ -200,11 +201,23 @@ export const deletePassword = (id, passwords, setPasswords) => {
             let filteredPasswords = passwords.filter(function (value, index) {
                 return index !== passwordIndex
             })
-
             setPasswords(filteredPasswords)
         })
-        .then(() => console.log(passwords))
         .catch((error) => {
-            console.error(error)
+            if (error.response === undefined) {
+                console.error('backend is disable')
+                return
+            }
+
+            let data = error.response.data
+
+            if (data.message === 'token is expired') {
+                refreshTokens().then(deletePassword)
+            } else {
+                console.error(data.message)
+            }
         })
 }
+
+
+

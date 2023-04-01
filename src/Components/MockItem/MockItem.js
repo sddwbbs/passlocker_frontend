@@ -1,9 +1,5 @@
 import { Card, Text, Button } from '@nextui-org/react'
 
-const hello = () => {
-    console.log('hello')
-}
-
 const MockItem = (props) => {
     return (
         <Card css={{ h: '200px', $$cardColor: 'white', mt: '50px' }}>
