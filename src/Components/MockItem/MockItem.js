@@ -3,7 +3,14 @@ import './MockItem.css'
 
 const MockItem = (props) => {
     return (
-        <Card css={{ h: '200px', $$cardColor: 'white', mt: '50px', position: 'relative' }}>
+        <Card
+            css={{
+                h: '200px',
+                $$cardColor: 'white',
+                mt: '50px',
+                position: 'relative',
+            }}
+        >
             <Card.Body className="card_body">
                 <Text h6 size={15} color="black" css={{ mt: 0 }}>
                     {props.text}

@@ -20,7 +20,7 @@ function Registration() {
         if (localStorage.getItem('access_token') !== null) {
             navigate('/dashboard')
         }
-    }, [navigate])
+    })
 
     const handleSubmit = (event) => {
         event.preventDefault()

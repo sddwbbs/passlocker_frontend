@@ -155,7 +155,7 @@ export const addPassword = (
             setLogin('')
             setEmail('')
             setPassword('')
-            
+
             // Update passwords list with new password
             getAllPasswords(setPasswords)
             setModal({ ...modal, modal1: false })
@@ -218,6 +218,3 @@ export const deletePassword = (id, passwords, setPasswords) => {
             }
         })
 }
-
-
-
