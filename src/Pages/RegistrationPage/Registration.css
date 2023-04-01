@@ -29,8 +29,8 @@
 
 .arrow-reg_page {
     rotate: 90deg;
-    margin-left: 2px;  
-    color: black; 
+    margin-left: 2px;
+    color: black;
 }
 
 .Header1_reg_page {
@@ -120,18 +120,18 @@
 
 @media only screen and (max-width: 710px) {
     .img-Logo {
-      width: 20%;
+        width: 20%;
     }
     .img-Human {
-      width: 25%;
+        width: 25%;
     }
     .Header2_reg_page {
-      font-size: 18px;
+        font-size: 18px;
     }
-  }
+}
 
 @media only screen and (max-width: 850px) {
     .Header1_reg_page {
-      font-size: 30px;
+        font-size: 30px;
     }
 }
