@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+.go_back_button:hover {
+    background-color: rgba(143, 142, 142, 0.934)
+}
+
 .arrow-reg_page {
     rotate: 90deg;
     margin-left: 2px;
@@ -79,6 +83,10 @@
     background-color: #aeaeae;
     text-decoration: none;
     cursor: pointer;
+}
+
+.button_reg_page:hover {
+    background-color: #8a8a8a;
 }
 
 .white-background {

@@ -43,13 +43,6 @@ function Dashboard() {
                     onClick={() => {
                         logOut(navigate)
                     }}
-                    style={{
-                        width: '35%',
-                        borderRadius: '20px',
-                        backgroundColor: 'white',
-                        color: 'black',
-                        justifyContent: 'center',
-                    }}
                 >
                     Выйти
                 </button>

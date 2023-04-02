@@ -16,10 +16,12 @@ const MockItem = (props) => {
                     {props.text}
                 </Text>
                 <Button
+                    className="delete_button"
                     auto
                     color="white"
                     onPress={props.onDelete}
                     css={{
+                        height: '30px',
                         position: 'absolute',
                         top: '10px',
                         right: '10px',

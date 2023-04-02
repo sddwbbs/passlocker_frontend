@@ -46,3 +46,7 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.button_log_page:hover {
+    background-color: #a3a3a3;
+}

@@ -17,10 +17,10 @@ function Home() {
             <Navbar
                 buttons={[
                     <Link to="/login" key={'4'}>
-                        <button className="login_button">Войти</button>
+                        <button className="home_page_button">Войти</button>
                     </Link>,
                     <Link to="/register" key={'5'}>
-                        <button className="registration_button">
+                        <button className="home_page_button">
                             Зарегистрироваться
                         </button>
                     </Link>,

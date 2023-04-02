@@ -36,11 +36,15 @@
     color: white;
     text-decoration: none;
     background-color: #1f1f1f;
-    border-radius: 10px;
+    border-radius: 10px;    
     border: none;
     height: 40px;
     width: 130px;
     cursor: pointer;
+}
+
+.plus_button:hover {
+    background-color: #414040;
 }
 
 .exit_button {
@@ -60,6 +64,10 @@
     background-color: white;
     color: black;
     justify-content: center;
+}
+
+.exit_button:hover {
+    background-color: #c0c0c0;
 }
 
 .plusIcon-dashboard {
