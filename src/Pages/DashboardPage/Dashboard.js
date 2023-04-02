@@ -39,7 +39,7 @@ function Dashboard() {
         <div style={{ display: 'flex', flexDirection: 'row', height: '100vh' }}>
             <div className="black-background-dashboard">
                 <button
-                    className="plus_button"
+                    className="exit_button"
                     onClick={() => {
                         logOut(navigate)
                     }}
@@ -76,22 +76,11 @@ function Dashboard() {
                     {passwords &&
                         passwords.map((item) => (
                             <Grid
-                                xs={5.8}
-                                sm={3.8}
-                                md={2.8}
+                                xs={11}
+                                sm={5.9}
+                                md={3.9}
+                                lg={2.9}
                                 key={generateKey('grid') + item.id}
-                                css={{
-                                    '@media screen and (max-width: 600px)': {
-                                        xs: 12,
-                                    },
-                                    '@media screen and (min-width: 600px) and (max-width: 1100px)':
-                                        {
-                                            xs: 6,
-                                        },
-                                    '@media screen and (min-width: 1100px)': {
-                                        xs: 2.8,
-                                    },
-                                }}
                             >
                                 <MockItem
                                     text={item.serviceName}

@@ -7,7 +7,7 @@ const MockItem = (props) => {
             css={{
                 h: '200px',
                 $$cardColor: 'white',
-                mt: '50px',
+                mt: '10px',
                 position: 'relative',
             }}
         >
