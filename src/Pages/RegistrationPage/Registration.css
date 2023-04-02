@@ -128,14 +128,28 @@
 
 @media only screen and (max-width: 710px) {
     .img-Logo {
-        width: 20%;
+        display: none;
     }
     .img-Human {
-        width: 25%;
+        display: none;
     }
     .Header2_reg_page {
         font-size: 18px;
     }
+    .white-background {
+        max-width: 0%;
+        height: auto;
+    }
+    .button_reg_page {
+        height: 55px;
+        font-size: 15px;
+        width: 65%;
+    }
+    .input_reg_page {
+        padding: 13px;
+        width: 65%;
+    }
+    
 }
 
 @media only screen and (max-width: 850px) {
