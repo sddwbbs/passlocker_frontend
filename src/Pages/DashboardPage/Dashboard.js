@@ -95,11 +95,12 @@ function Dashboard() {
                 isOpened={modal.modal1}
                 onModalClose={() => setModal({ ...modal, modal1: false })}
             >
-                <form>
+                <form css={{display: 'flex'}}>
                     <h2
                         className="modal_window_h2"
                         style={{
                             marginTop: '30px',
+                            flex: 1,
                         }}
                     >
                         Название сервиса
@@ -111,6 +112,9 @@ function Dashboard() {
                         placeholder="введите название"
                         value={serviceName}
                         onChange={(e) => setServiceName(e.target.value)}
+                        style={{
+                            flex: 1,
+                        }}
                     />
                     <h2 className="modal_window_h2">Ссылка</h2>
                     <input
@@ -120,6 +124,9 @@ function Dashboard() {
                         placeholder="вставьте ссылку"
                         value={link}
                         onChange={(e) => setLink(e.target.value)}
+                        style={{
+                            flex: 1,
+                        }}
                     />
                     <h2 className="modal_window_h2">Логин</h2>
                     <input

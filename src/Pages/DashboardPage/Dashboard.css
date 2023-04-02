@@ -105,3 +105,21 @@
       font-size: 0;
     }
   }
+
+@media screen and (max-height: 1090px) {
+    .modal_window_h2 {
+        font-size: 15px;
+    }
+    .modal_window_input {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .modal_window_h2 {
+        font-size: 12px;
+    }
+    .modal_window_input {
+        padding: 5px;
+    }
+}

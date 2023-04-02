@@ -24,9 +24,9 @@
     margin: auto;
     background: white;
     margin-top: 2%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    max-height: 800px;
+    max-height: 700px;
     overflow-y: scroll;
 }
 
@@ -41,17 +41,27 @@
 }
 
 .modal__close {
-    text-align: right;
-    margin-top: -15px;
-    font-size: 40px;
-    color: gray;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
     cursor: pointer;
+    float: right;
+}
+
+.modal__close:hover {
+    background-color: #414040;
 }
 
 .modal__title {
     text-align: center;
     width: 100%;
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 0px;
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
     font-size: 25px;
