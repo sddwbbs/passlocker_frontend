@@ -2,6 +2,7 @@ import { Grid } from '@nextui-org/react'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Modal from '../../Components/Modal/Modal.js'
+import ShowModal from '../../Components/Modal/Modal.js'
 import MockItem from '../../Components/MockItem/MockItem.js'
 import plusIcon from '../../Assets/plusIcon.png'
 import './Dashboard.css'
@@ -76,7 +77,11 @@ function Dashboard() {
                                 key={generateKey('grid') + item.id}
                             >
                                 <MockItem
-                                    text={item.serviceName}
+                                    serviceName={item.serviceName}
+                                    link={item.link}
+                                    email={item.email}
+                                    login={item.login}
+                                    password={item.password}
                                     key={generateKey('password') + item.id}
                                     onDelete={() =>
                                         deletePassword(
