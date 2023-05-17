@@ -1,26 +1,17 @@
 import './Navbar.css'
 import logo from '../../Assets/keyLogo.png'
+import logoText from '../../Assets/logo_text.png'
 import { Link } from 'react-router-dom'
 
 function Navbar(props) {
     return (
-        <nav>
+        <nav>   
             <div className="navbar-left">
                 <Link to={props.mainLabelHref}>
                     <img src={logo} height="40" width="40" alt="Logo" />
                 </Link>
-                <Link
-                    to={props.mainLabelHref}
-                    style={{ textDecoration: 'none' }}
-                >
-                    <ul className="brand">
-                        <li>
-                            <div className="brand-left"> pass</div>
-                        </li>
-                        <li>
-                            <div className="brand-right"> locker</div>
-                        </li>
-                    </ul>
+                <Link to={props.mainLabelHref}>
+                    <img className="logoText" src={logoText} alt="LogoText" />
                 </Link>
             </div>
             <div className="navbar-right">

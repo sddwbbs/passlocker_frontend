@@ -20,34 +20,17 @@ li {
 .navbar-left {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 15%;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.logoText {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 35px;
+    width: 155px;
 }
-
 .navbar-right {
     display: flex;
     align-items: center;
-    margin-right: 200px;
-}
-
-.brand-left {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 600;
-    margin-left: -10px;
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
-}
-
-.brand-right {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 300;
-    margin-left: -20px;
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
+    margin-right: 15%;
 }
