@@ -1,5 +1,4 @@
 import { Card, Text, Button } from '@nextui-org/react'
-import eyeIcon from '../../Assets/eyeIcon.png'
 import './MockItem.css'
 
 const MockItem = (props) => {
