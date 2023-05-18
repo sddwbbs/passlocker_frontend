@@ -26,7 +26,7 @@ function Login() {
 
     return (
         <div className="no-scroll">
-            <Navbar mainLabelHref={'/'} />
+            <Navbar mainLabelHref={'/'}/>
             <form onSubmit={handleSubmit}>
                 <h1 className="Header1_log_page">Вход</h1>
                 <h2 className="Header2_log_page">Введите email:</h2>
