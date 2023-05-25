@@ -6,48 +6,113 @@ nav {
     padding: 6px;
 }
 
-ul {
+.ul-navbar {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.li-navbar {
     margin-left: 20px;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 15%;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.Logo {
+    height: 40px;
+    width: 40px;
+}
+
+.LogoText {
+    height: 35px;
+    width: 160px;
 }
 
 .navbar-right {
     display: flex;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 15%;
 }
 
-.brand-left {
+.burger-btn {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-btn::before {
+    content: ''; 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    background-color: white;
+    height: 2px;
+}
+
+.burger-btn span {
+    position: absolute;
+    top: 16px;
+    right: 5px;
+    width: 20px;
+    background-color: white;
+    height: 2px;
+}
+
+.burger-btn::after {
+    content: ''; 
+    position: absolute;
+    bottom: -9px;
+    right: 5px;
+    width: 20px;
+    background-color: white;
+    height: 2px;
+}
+
+.menu_button {
     font-family: 'Lexend', sans-serif;
     font-weight: 600;
-    margin-left: -10px;
-    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 140%;
     color: white;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.brand-right {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 300;
-    margin-left: -20px;
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
+.menu_button:hover {
+    color: rgb(195, 195, 195);
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar-left {
+        margin-left: 2%;
+    }
+
+    .navbar-right {
+        display: none;
+        color: black;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .LogoText {
+        display: none;
+    }
+
+    .Logo {
+        height: 35px;
+        width: 35px;
+    }
 }
